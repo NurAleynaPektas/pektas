@@ -1,8 +1,8 @@
-// import izitoast from "izitoast";
+// import { izitoast } from "izitoast";
 // import "izitoast/dist/css/iziToast.min.css";
 
-// import "simplelightbox/dist/simple-lightbox.min.css";
-// import SimpleLightbox from "simplelightbox";
+import "simplelightbox/dist/simple-lightbox.min.css";
+import { SimpleLightbox } from "simplelightbox";
 
 const apiKey = "49228326-f0295c59acbd8047419a0b87e";
 const input = document.querySelector(".input");
@@ -68,7 +68,8 @@ function imgDetails(element) {
     )
     .join(" ");
   gallery.innerHTML = altYazi;
-  const lightbox = new window.SimpleLightbox(".gallery-item", {
+
+  const lightbox = new SimpleLightbox(".gallery-item", {
     captionsData: "alt",
     captionDelay: 250,
   });
