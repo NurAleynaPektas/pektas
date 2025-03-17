@@ -42,3 +42,9 @@
     transform: rotate(360deg);
   }
 }
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  list-style-type: none;
+}

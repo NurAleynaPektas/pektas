@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  root: "src", // Vite'nin proje kök dizini olarak 'src' klasörünü kullanmasını sağlar
+  root: "src", 
   server: {
     port: 5173,
   },
